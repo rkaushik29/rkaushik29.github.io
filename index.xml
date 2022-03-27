@@ -8,14 +8,13 @@
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright><atom:link href="https://rkaushik29.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>MealMe</title>
-      <link>https://rkaushik29.github.io/mealme/</link>
+      <title>project pegasus</title>
+      <link>https://rkaushik29.github.io/pegasus/</link>
       <pubDate>Thu, 10 Feb 2022 02:33:18 -0800</pubDate>
       
-      <guid>https://rkaushik29.github.io/mealme/</guid>
-      <description>99% Perspiration, 1% Inspiration.
- Most of the work done at MealMe was using python, flask, mongodb, go, and related tools to create services and APIs
- Added over 200,000 grocery stores and restaurants from Canada and USA to the Search Engine service database (mongodb). Streamlined the alerting process for search engine failures, exceptions and crashes by separating notification channels on slack to improve readability. Created endpoints to allow cross communication between services in the company, allowing data to be seamlessly transferred from them to the search engine database, to improve data consistency and accuracy between services.</description>
+      <guid>https://rkaushik29.github.io/pegasus/</guid>
+      <description>Helping Unicorns Fly.
+ To begin with a little background about me: I grew up in Bangalore, India (the silicon valley of India, and rightly so in my opinion). I have always been senisitive to and influenced by the communities around me. Main reason → I grew up going to just one school from age 2-17. I went through the foundational years of my life growing up with the same cohort of about 80 kids, and I am truly grateful for this experience because:</description>
     </item>
     
     <item>
@@ -24,8 +23,8 @@
       <pubDate>Sun, 12 Dec 2021 22:11:59 -0500</pubDate>
       
       <guid>https://rkaushik29.github.io/text/</guid>
-      <description>Readings Currently Reading : The Return of the King Previously Read:
-   Title Author     The Two Towers J.R.R Tolkein   The Fellowship of the Ring J.R.R. Tolkein   Elon Musk: Tesla, SpaceX and the Quest for a Fantastic Future Ashlee Vance   Atomic Habits James Clear   Foundation and Earth Isaac Asimov   Foundation&amp;rsquo;s Edge Isaac Asimov    You can find a more detailed list of my readings on my Notion.</description>
+      <description>Readings Currently Reading : 1984 Previously Read:
+   Title Author     Fundraising Ryan Breslow   The Return of the King J.R.R Tolkein   The Two Towers J.R.R Tolkein   The Fellowship of the Ring J.R.R. Tolkein   Elon Musk: Tesla, SpaceX and the Quest for a Fantastic Future Ashlee Vance   Atomic Habits James Clear   Foundation&amp;rsquo;s Edge Isaac Asimov    You can find a more detailed list of my readings on my Notion.</description>
     </item>
     
     <item>
