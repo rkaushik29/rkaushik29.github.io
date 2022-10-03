@@ -36,8 +36,7 @@ Title Author Fundraising Ryan Breslow The Return of the King J.R.R Tolkein The T
       <guid>https://rkaushik29.github.io/timeline/</guid>
       <description>📄 Resume
 2022 Software Engineering Intern @Staax , San Francisco CA Jun. 2022 - Present
-Software Engineering Intern @MealMe , San Francisco CA Jan. 2022 - May 2022
-Aggregated 10+ delivery services in USA &amp;amp; CAN (many hundred thousand stores and restaurants) to MealMe’s selection of services for ordering food, groceries, laundry, etc. → improved Series A metric. Accelerated compilation time of search engine, increased speed by 64x. Sped up crawling algorithm, which crawls and adds 2 stores/second to our database → key Series A metric.</description>
+Implemented an end-to-end user feedback system in the app, including a node.js API and a react native screen to supplement it. Developed an internal react webapp to display collected feedback. Engineered a data caching system with firestore and AWS-Elasticache for frequently accessed stock data, improving screen load time by 10x in the app. Created several AWS-CloudWatch queries and dashboards to retrieve user metrics like unique signups, and identify service errors in the app.</description>
     </item>
     
     <item>
