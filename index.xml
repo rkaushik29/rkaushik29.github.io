@@ -24,8 +24,8 @@ the problem With agencies like Randstad and LinkedIn connecting people to enterp
       <pubDate>Sun, 12 Dec 2021 22:11:59 -0500</pubDate>
       
       <guid>https://rkaushik29.github.io/text/</guid>
-      <description>Readings Currently Reading : Cold Start Problem, Andrew Chen Previously Read:
-Title Author What We Owe The Future William MacAskhill Quantum Computing for Everyone Chris Bernhardt Fundraising Ryan Breslow The Return of the King J.R.R Tolkein Elon Musk: Tesla, SpaceX and the Quest for a Fantastic Future Ashlee Vance Foundation&amp;rsquo;s Edge Isaac Asimov You can find a more detailed list of my readings on my Notion. or (an even more detailed list) on my Goodreads.</description>
+      <description>Readings Currently Reading : Siddhartha, Herman Hesse Previously Read:
+Title Author Quantum Computing Since Democritus Scott Aaronson What We Owe The Future William MacAskhill Quantum Computing for Everyone Chris Bernhardt Fundraising Ryan Breslow The Return of the King J.R.R Tolkein Elon Musk: Tesla, SpaceX and the Quest for a Fantastic Future Ashlee Vance Foundation&amp;rsquo;s Edge Isaac Asimov You can find a more detailed list of my readings on my Notion. or (an even more detailed list) on my Goodreads.</description>
     </item>
     
     <item>
@@ -35,8 +35,9 @@ Title Author What We Owe The Future William MacAskhill Quantum Computing for Eve
       
       <guid>https://rkaushik29.github.io/timeline/</guid>
       <description>📄 Resume
-2022 Software Engineering Intern @Staax , San Francisco CA Jun. 2022 - Present
-Implemented an end-to-end user feedback system in the app, including a node.js API and a react native screen to supplement it. Developed an internal react webapp to display collected feedback. Engineered a data caching system with firestore and AWS-Elasticache for frequently accessed stock data, improving screen load time by 10x in the app. Created several AWS-CloudWatch queries and dashboards to retrieve user metrics like unique signups, and identify service errors in the app.</description>
+2023 Study Abroad Program @Graz University of Technology , Graz Austria Feb. 2023 - Jun. 2023
+Courses: NLP, GPU Programming, Recommender Systems, Social Media Technologies, Data Science &amp;amp; AI 2022 Software Engineering Intern @Staax , San Francisco CA Jun. 2022 - Jan. 2023
+Implemented Node.js endpoints, routes and integrated third‑party APIs using MVC design pattern by enforcing types in Typescript. Designed and created React Native screens with end‑to‑end data flows for Android and iOS through wireframing and AB testing.</description>
     </item>
     
     <item>
