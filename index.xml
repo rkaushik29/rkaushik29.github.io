@@ -25,9 +25,8 @@ Here is a collection of several quotes I have collated over time!</description>
       
       <guid>https://rkaushik29.github.io/timeline/</guid>
       <description>📄 Resume
-2023 Software Research Assistant @Open Web Search , Graz Austria Mar. 2023 - Jul. 2023
-Information Retrieval Systems research, with a focus on application development using Common Index File Format (CIFF) files. Study Abroad @Graz University of Technology , Graz Austria Feb. 2023 - Jun. 2023
-Courses: NLP, GPU Programming, Recommender Systems, Social Media Technologies, Data Science &amp;amp; AI 2022 Software Engineering Intern @Staax , San Francisco CA Jun.</description>
+2023 Research and Development Engineer @Open Web Search , Graz Austria Mar. 2023 - Jul. 2023
+Investigated the conversion between CIFF and Apache Lucene indexes to make the OpenSearchIndex open to developers. Engineered an app in Java that allows conversion of CIFF index to Lucene index, search over multiple indexes, and exposes a REST API for developers to use the OpenSearchIndex. Developed a React.js web application (Tourism in Graz) to demonstrate the use of the API.</description>
     </item>
     
     <item>
