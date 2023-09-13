@@ -13,9 +13,8 @@
       <pubDate>Sun, 12 Dec 2021 22:11:59 -0500</pubDate>
       
       <guid>https://rkaushik29.github.io/text/</guid>
-      <description>Readings Currently Reading: The Art of War Previously Read:
-Title Author Dune Frank Herbert Surely You&amp;rsquo;re Joking, Mr. Feynman Richard Feynman Siddhartha Hermann Hesse Quantum Computing Since Democritus Scott Aaronson What We Owe The Future William MacAskhill Quantum Computing for Everyone Chris Bernhardt Fundraising Ryan Breslow You can find a more detailed list of my readings on my Notion.
-Here is a collection of several quotes I have collated over time!</description>
+      <description>Publications While working with the Open Search Foundation within the European Union, I co-authored a technical research paper with Professors from several European institutions like University of Rotterdam, Leibnitz Supercomputing Center and TU Munich being published at the 5th International OSSYM (Open Search Symposium) in CERN, Geneva. Here is the paper&amp;rsquo;s proposal that was accepted: Prototype Search Application Using the Open Search Index
+Readings Currently Reading: The Art of War Previously Read:</description>
     </item>
     
     <item>
@@ -26,7 +25,7 @@ Here is a collection of several quotes I have collated over time!</description>
       <guid>https://rkaushik29.github.io/timeline/</guid>
       <description>📄 Resume
 2023 Research and Development Engineer Intern @Open Web Search , Graz Austria Mar. 2023 - Jul. 2023
-Investigated the conversion between CIFF and Apache Lucene indexes to make the OpenSearchIndex open to developers. Engineered an app in Java that allows conversion of CIFF index to Lucene index, search over multiple indexes, and exposes a REST API for developers to use the OpenSearchIndex. Developed a React.js web application for Tourism in Graz to demonstrate the use of the API.</description>
+Engineered conversion between CIFF and Apache Lucene indexes, opening the EU’s OpenSearchIndex to clients for development. Developed a Javelin Search API in Java to provide customized index manipulation with the OpenWebIndex, allowing it to be monetized. Published a research paper at the 5th International Open Search Symposium, CERN, about a prototype React.</description>
     </item>
     
     <item>
