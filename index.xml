@@ -8,13 +8,12 @@
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright><atom:link href="https://rkaushik29.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>text</title>
-      <link>https://rkaushik29.github.io/text/</link>
+      <title>publications</title>
+      <link>https://rkaushik29.github.io/publications/</link>
       <pubDate>Sun, 12 Dec 2021 22:11:59 -0500</pubDate>
       
-      <guid>https://rkaushik29.github.io/text/</guid>
-      <description>Publications While working with the Open Search Foundation within the European Union, I co-authored a technical research paper with Professors from several European institutions like University of Rotterdam, Leibnitz Supercomputing Center and TU Munich being published at the 5th International OSSYM (Open Search Symposium) in CERN, Geneva. Here is the paper&amp;rsquo;s proposal that was accepted: Prototype Search Application Using the Open Search Index
-Readings Currently Reading: The Art of War Previously Read:</description>
+      <guid>https://rkaushik29.github.io/publications/</guid>
+      <description>Publications While working with the Open Search Foundation within the European Union, I co-authored a technical research paper with Professors from several European institutions like University of Rotterdam, Leibnitz Supercomputing Center and TU Munich being published at the 5th International OSSYM (Open Search Symposium) in CERN, Geneva. Here is the paper&amp;rsquo;s proposal that was accepted by CERN. Conceptual Design and Implementation of a Prototype Search Application using the Open Search Index</description>
     </item>
     
     <item>
