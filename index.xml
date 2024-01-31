@@ -24,8 +24,8 @@ Conceptual Design and Implementation of a Prototype Search Application using the
       
       <guid>https://rkaushik29.github.io/work/</guid>
       <description>📄 Resume
-2023 Research and Development Engineer Intern @Open Web Search , Graz Austria Mar. 2023 - Jul. 2023
-Engineered conversion between CIFF and Apache Lucene indexes, opening the EU’s OpenSearchIndex to clients for development. Developed a Javelin Search API in Java to provide customized index manipulation with the OpenWebIndex, allowing it to be monetized. Published a research paper at the 5th International Open Search Symposium, CERN, about a prototype React.</description>
+2024 Lead Software Engineer @Sponsor A Pet, Bethesda, MA Jan. 2024 - Present
+Building a fundraising and content delivery webapp using Python, Django REST Framework and React.js. Integrating third‑paty APIs including Sendgrid for internal and client emailing services and Stripe for payments. Engineering API infrastructure using AWS’ EC2, S3 and RDS with PostgreSQL, and using AWS Ampify’s high performance CDN on the webapp. Managing a team of two engineers and actively conducting interviews to grow the team.</description>
     </item>
     
     <item>
