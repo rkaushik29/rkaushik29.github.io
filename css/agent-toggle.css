@@ -1,0 +1,35 @@
+.agent-raw-markdown {
+  font-family: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  padding: 1.5rem;
+  border-radius: 8px;
+  background: var(--background);
+  border: 1px solid var(--accent);
+  overflow-x: auto;
+}
+
+.agent-toggle {
+  margin-left: 8px;
+}
+
+.agent-toggle button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--color);
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  transition: color 0.2s ease;
+}
+
+.agent-toggle button.active {
+  color: var(--accent);
+}
+
+.agent-toggle button:hover {
+  color: var(--accent);
+}

@@ -24,8 +24,8 @@ Conceptual Design and Implementation of a Prototype Search Application using the
       
       <guid>https://rkaushik29.github.io/work/</guid>
       <description>📄 Resume
-2025 Senior Software Engineer @ Planned, Montréal, QC Oct 2024 – Present
-Built multi-agent workflows in the supplier-sourcing platform using Temporal, supporting Planned’s $35M Series B. Developed a multi-city travel cost optimization tool for global corporate events (Next.js, TypeScript/tRPC, React) with multiple third-party API integrations; served as domain owner from design through delivery. Designed a prompt library (exposed via GitHub Models → later Latitude) enabling non-technical stakeholders to A/B test LLM prompts; exposed reusable agentic API clients for engineers to implement flexibly.</description>
+2025 Software Engineer @ Planned, Montréal, QC Oct 2024 – Present
+Built agentic workflows with LangChain in the platform with Temporal workflows, contributing to a $35M Series B. Spearheaded a multi-city travel cost optimization tool for global corporate events with multiple third-party API integrations as domain owner (Next.js, TypeScript/tRPC, React), leading to three client signatures. Designed a prompt library (exposed via GitHub Models → later Latitude) enabling non-technical stakeholders to A/B test LLM prompts.</description>
     </item>
     
     <item>

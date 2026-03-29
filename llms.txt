@@ -1,0 +1,30 @@
+# Rohit Kaushik
+
+> Personal website of Rohit Kaushik -- entrepreneur, computer scientist, and product builder. Senior Software Engineer at Planned, Founding Engineer at Howl. University of Waterloo CS graduate.
+
+## Pages
+
+- [About](/about.md): Background, current work, building philosophy, interests
+- [Work](/work.md): Career timeline from 2017 to present with detailed role descriptions
+- [Library](/library.md): Publications, technical writings, reading list, podcasts
+
+## Full Content
+
+- [All content in one file](/llms-full.txt): Complete text of all pages concatenated
+
+## Documents (PDF)
+
+- [Resume](/files/rohitk.pdf)
+- [Fake News Detection](/files/fake_news_report.pdf)
+- [Sentiment Analysis of the 2020 US Elections](/files/sentiment_analysis.pdf)
+- [The Role of Containers in Modern Application Development](/files/containers.pdf)
+- [Machine Unlearning and its Verification](/files/unlearning.pdf)
+- [Decentralization of the Internet](/files/decent_int.pdf)
+- [Tokenomics](/files/tokenomics.pdf)
+
+## Contact
+
+- Email: rohit.rk.rk1@gmail.com
+- GitHub: https://github.com/rkaushik29
+- LinkedIn: https://www.linkedin.com/in/rkaushik29/
+- X/Twitter: https://x.com/rohitkaushik29
