@@ -7,7 +7,7 @@ While working with the Open Search Foundation in the EU, I co-authored a technic
 
 ## Writings
 
-As part of internships and coursework, I’ve written several technical papers:
+As part of internships and coursework, I've written several technical papers:
 
 - [Fake News Detection](/files/fake_news_report.pdf)
 - [Sentiment Analysis of the 2020 US Elections](/files/sentiment_analysis.pdf)
@@ -26,7 +26,7 @@ As part of internships and coursework, I’ve written several technical papers:
 | :--- | :--- |
 | Siddhartha | Hermann Hesse |
 | The Complete Robot | Isaac Asimov |
-| Surely You’re Joking, Mr. Feynman! | Richard P. Feynman |
+| Surely You're Joking, Mr. Feynman! | Richard P. Feynman |
 | Make Something Wonderful: Steve Jobs in his own words | Steve Jobs |
 | Foundation (series) | Isaac Asimov |
 
@@ -36,9 +36,9 @@ You can find a longer, evolving list of my readings on my *[Notion reading list]
 
 A few podcasts that consistently make the rotation:
 
-- **Founders** — stories & lessons from iconic builders  
-- **Lightcone** — YC deep dives on tech, science, and the future  
-- **All-In** — markets, startups, and policy (with healthy debate)  
-- **Lex Fridman Podcast** — long-form conversations across science & engineering  
+- **Founders** — stories & lessons from iconic builders
+- **Lightcone** — YC deep dives on tech, science, and the future
+- **All-In** — markets, startups, and policy (with healthy debate)
+- **Lex Fridman Podcast** — long-form conversations across science & engineering
 
-[^1]: My *[author profile](http://uwimprint.ca/article/author/rohit-kaushik/)* contains articles I wrote for UWaterloo’s student newspaper.
+[^1]: My *[author profile](http://uwimprint.ca/article/author/rohit-kaushik/)* contains articles I wrote for UWaterloo's student newspaper.

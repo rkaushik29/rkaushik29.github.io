@@ -1,5 +1,5 @@
 
-:page_facing_up: [Resume](/files/rohitk.pdf)
+📄 [Resume](/files/rohitk.pdf)
 
 
 ## 2025
@@ -30,12 +30,12 @@
 ### *R&D Engineer @ [Open Search Foundation](https://opensearchfoundation.org/) (EU), Graz, Austria*
 **Mar 2023 – Jul 2023**
 
-- Engineered **CIFF → Apache Lucene** index conversion, opening the EU’s OpenSearchIndex to clients for development.
+- Engineered **CIFF → Apache Lucene** index conversion, opening the EU's OpenSearchIndex to clients for development.
 - Developed a **Javelin Search API** in Java to provide customized index manipulation with the OpenWebIndex, allowing it to be monetized.
-- Published a research paper at the **5th International Open Search Symposium (OSSYM), CERN**, about a prototype React.js web application (“Tourism in Graz”) to demonstrate the API.
+- Published a research paper at the **5th International Open Search Symposium (OSSYM), CERN**, about a prototype React.js web application ("Tourism in Graz") to demonstrate the API.
 
-### *Study Abroad @ [Graz University of Technology](https://www.tugraz.at/home), Graz, Austria*  
-**Feb 2023 – Jun 2023**  
+### *Study Abroad @ [Graz University of Technology](https://www.tugraz.at/home), Graz, Austria*
+**Feb 2023 – Jun 2023**
 Courses: **NLP, Recommender Systems, Social Media Technologies, Data Science & AI**
 
 
@@ -57,65 +57,65 @@ Courses: **NLP, Recommender Systems, Social Media Technologies, Data Science & A
 
 ## 2021
 
-### *Product Manager / Software Developer Intern @ MTLight, Montreal, QC*  
-**Sep 2021 – Nov 2021**  
+### *Product Manager / Software Developer Intern @ MTLight, Montreal, QC*
+**Sep 2021 – Nov 2021**
 Owned a **SvelteKit** app turning city murals into AR assets for municipal upkeep; drove roadmap, spec, and deployment with the CEO.
 
-### *DevOps Engineering Intern @ Lixar, Ottawa, ON*  
-**Jun 2021 – Aug 2021**  
+### *DevOps Engineering Intern @ Lixar, Ottawa, ON*
+**Jun 2021 – Aug 2021**
 Company-wide **GitHub Actions** templates for React/React Native; **AWS CodeDeploy** pipelines for a Spring Boot service; K8s PoCs for scale.
 
-### *Opinions Editor @ Imprint, Waterloo, ON*  
-**Jan 2021 – Dec 2021**  
+### *Opinions Editor @ Imprint, Waterloo, ON*
+**Jan 2021 – Dec 2021**
 Coordinated writers and topics; edited and published weekly/bi-weekly columns.
 
 
 ## 2020
 
-### *Software Engineering Intern @ Palomino, Toronto, ON*  
-**Sep 2020 – Dec 2020**  
+### *Software Engineering Intern @ Palomino, Toronto, ON*
+**Sep 2020 – Dec 2020**
 Ticketing app (PHP, Laravel, MySQL, Vue.js) with Zendesk integration + cron refresh; legacy jQuery/Ajax migration.
 
-### *News Writer @ Imprint, Waterloo, ON*  
-**Sep 2020 – Dec 2020**  
+### *News Writer @ Imprint, Waterloo, ON*
+**Sep 2020 – Dec 2020**
 Wrote weekly opinion pieces for the student-run paper.
 
-### *Full-Stack Development Intern @ IFDS, Toronto, ON*  
-**Jan 2020 – Apr 2020**  
+### *Full-Stack Development Intern @ IFDS, Toronto, ON*
+**Jan 2020 – Apr 2020**
 Automated Selenium suites; refactored Java onboarding flows; expense app (Python + React); **AWS Multipart Upload** for large files (**~30%** faster).
 
 
 ## 2019
 
-### *Biquadris @ CS246, Waterloo, ON*  
-**Nov 2019**  
-Implemented a two-player Tetris (“Biquadris”) in C++ with classic OOP patterns.  
+### *Biquadris @ CS246, Waterloo, ON*
+**Nov 2019**
+Implemented a two-player Tetris ("Biquadris") in C++ with classic OOP patterns.
 [GitHub](https://github.com/navyamehta/enhancedgamedev)
 
-### *Full-Stack Development Intern @ Cannect, Toronto, ON*  
-**Jun 2019 – Aug 2019**  
+### *Full-Stack Development Intern @ Cannect, Toronto, ON*
+**Jun 2019 – Aug 2019**
 Migrated React app (Bootstrap 3 → 4, mobile-first); maintained Vue.js + Rails; supported Docker → K8s migration.
 
-### *ShortStock @ StarterHacks, Waterloo, ON*  
-**Jan 2019**  
-Built a personalized stock-news feed with NLP categorization and an MLP classifier for relevance.  
+### *ShortStock @ StarterHacks, Waterloo, ON*
+**Jan 2019**
+Built a personalized stock-news feed with NLP categorization and an MLP classifier for relevance.
 [GitHub](https://github.com/akshay2000saxena/ShortStocks)
 
 
 ## 2018
 
-### *High School Graduation @ NPSk, Bangalore, KA*  
-**May 2018**  
+### *High School Graduation @ NPSk, Bangalore, KA*
+**May 2018**
 CBSE Grade 12: **96.8%**, CS: **100%**, School Rank: **#4**
 
-### *Scrabble @ NPSk, Bangalore, KA*  
-**Jan 2018**  
-Re-created Scrabble in C++ with OOP principles.  
+### *Scrabble @ NPSk, Bangalore, KA*
+**Jan 2018**
+Re-created Scrabble in C++ with OOP principles.
 [GitHub](https://github.com/rkaushik29/Scrabble)
 
 
 ## 2017
 
-### *Particle Physics Workshop @ CERN, Geneva, CH*  
-**Oct 2017**  
+### *Particle Physics Workshop @ CERN, Geneva, CH*
+**Oct 2017**
 Ten-day workshop focused on **CMS** at the LHC; selected as one of ~20 participants from India. Attended sessions at the **UN (Palais des Nations)**.

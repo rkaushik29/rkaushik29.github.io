@@ -7,61 +7,61 @@
 # About
 
 
-> "Finished products are for decadent minds."  
+> "Finished products are for decadent minds."
 > — Bail Channis, [*Second Foundation*](https://en.wikipedia.org/wiki/Second_Foundation)
 
-Hi! :wave:
+Hi! 👋
 
 I'm Rohit — an entrepreneur, computer scientist, and product builder. I graduated in Computer Science from the [University of Waterloo](https://uwaterloo.ca/), spent time around the LHC at CERN (even published a small paper), and today I split my energy between shipping valuable software and understanding how systems scale behind it — from product reasoning to quantum information.
 
-Have a look at my *[timeline](https://rkaushik29.github.io/work)* for a detailed walk through of what I’ve built and where I’ve worked.
+Have a look at my *[timeline](https://rkaushik29.github.io/work)* for a detailed walk through of what I've built and where I've worked.
 
 ### Where I come from
 
 I grew up in [Bangalore, India](https://goo.gl/maps/TZLVzy6jBxneBGMZ7) — informally the "Silicon Valley of India." Watching tiny shops become national and then global companies hard-wired me to care about bottom-up momentum: ideas → prototypes → customers → compounding results.[^1] That early exposure nudged me into computing and the craft of turning ideas into running systems.
 
-### What I’m doing now
+### What I'm doing now
 
-- **Senior/founding engineering.** I like zero-to-one problems and the unglamorous glue that makes v1 actually work in production. I’ve built data-heavy features, event/workflow systems, and product analytics dashboards across scrappy startups and mid-stage orgs.
-- **AI for product context.** I’m exploring an AI-powered “context engine” that becomes the system of record for *why* teams make decisions — stitching signals across docs, issues, designs, and feedback to keep leaders aligned.  
-- **Hands-on consulting & app improvements.** I’ve tuned React/React Native apps, integrated external AI APIs, and shipped paywalled features on Firebase/GCP when teams need momentum more than ceremony.  
+- **Senior/founding engineering.** I like zero-to-one problems and the unglamorous glue that makes v1 actually work in production. I've built data-heavy features, event/workflow systems, and product analytics dashboards across scrappy startups and mid-stage orgs.
+- **AI for product context.** I'm exploring an AI-powered "context engine" that becomes the system of record for *why* teams make decisions — stitching signals across docs, issues, designs, and feedback to keep leaders aligned.
+- **Hands-on consulting & app improvements.** I've tuned React/React Native apps, integrated external AI APIs, and shipped paywalled features on Firebase/GCP when teams need momentum more than ceremony.
 - **Deep-interest lane.** I keep my toes in quantum information, mostly for the joy of first-principles thinking and understading.
 
 ### How I like to build
 
-- **Taste:** ship the smallest thing that proves value; delete complexity when possible.  
+- **Taste:** ship the smallest thing that proves value; delete complexity when possible.
 - **Stack I reach for:** TypeScript, tRPC, Drizzle/Prisma + Postgres/Neon, Temporal/queues for workflows, good observability tools (Datadog, Mixpanel).
-- **Engineering habits:** typed contracts, reproducible environments, versioned prompts/configs, and honest metrics. 99% perspiration, 1% inspiration — if I work the hardest, I’ll either succeed or learn quickly that no one can on the given terms.
+- **Engineering habits:** typed contracts, reproducible environments, versioned prompts/configs, and honest metrics. 99% perspiration, 1% inspiration — if I work the hardest, I'll either succeed or learn quickly that no one can on the given terms.
 
 ### Reading, writing, and side quests
 
-I read widely and write when I have something to say. You can find essays, notes, and publications *[here](https://rkaushik29.github.io/library)*.  
-I’ve also been known to:
-- build questionable hardware (I once resurrected an old Tesla coil),  
-- host my own music server, and  
+I read widely and write when I have something to say. You can find essays, notes, and publications *[here](https://rkaushik29.github.io/library)*.
+I've also been known to:
+- build questionable hardware (I once resurrected an old Tesla coil),
+- host my own music server, and
 - tinker with a custom PC for gaming and development.
 
 ### Sports & play
 
-I’m happiest outdoors — tennis, basketball, or just staring at a dark, quiet sky. (Stargazing > light pollution. :bulb:)
+I'm happiest outdoors — tennis, basketball, or just staring at a dark, quiet sky. (Stargazing > light pollution. 💡)
 I also enjoy playing the guitar, and I follow:
 
 | Sport | Team/Player |
 | :---: | :---: |
-| :basketball: | Los Angeles Lakers |
-| :tennis: | Rafael Nadal |
-| :8ball: | A soft spot for physics (hi, Coriolis) |
-| :soccer: | Manchester United |
+| 🏀 | Los Angeles Lakers |
+| 🎾 | Rafael Nadal |
+| 🎱 | A soft spot for physics (hi, Coriolis) |
+| ⚽ | Manchester United |
 
 
-[^1]: In 2008, a friend’s uncle started an adtech company and spoke about it with wild conviction. Four years later, I opened the paper to see it valued at $1B and moving operations to San Francisco. The company was *[InMobi](https://www.inmobi.com/).* Moments like that imprinted the power of compounding execution.
+[^1]: In 2008, a friend's uncle started an adtech company and spoke about it with wild conviction. Four years later, I opened the paper to see it valued at $1B and moving operations to San Francisco. The company was *[InMobi](https://www.inmobi.com/).* Moments like that imprinted the power of compounding execution.
 
 ---
 
 # Work
 
 
-:page_facing_up: [Resume](/files/rohitk.pdf)
+📄 [Resume](/files/rohitk.pdf)
 
 
 ## 2025
@@ -92,12 +92,12 @@ I also enjoy playing the guitar, and I follow:
 ### *R&D Engineer @ [Open Search Foundation](https://opensearchfoundation.org/) (EU), Graz, Austria*
 **Mar 2023 – Jul 2023**
 
-- Engineered **CIFF → Apache Lucene** index conversion, opening the EU’s OpenSearchIndex to clients for development.
+- Engineered **CIFF → Apache Lucene** index conversion, opening the EU's OpenSearchIndex to clients for development.
 - Developed a **Javelin Search API** in Java to provide customized index manipulation with the OpenWebIndex, allowing it to be monetized.
-- Published a research paper at the **5th International Open Search Symposium (OSSYM), CERN**, about a prototype React.js web application (“Tourism in Graz”) to demonstrate the API.
+- Published a research paper at the **5th International Open Search Symposium (OSSYM), CERN**, about a prototype React.js web application ("Tourism in Graz") to demonstrate the API.
 
-### *Study Abroad @ [Graz University of Technology](https://www.tugraz.at/home), Graz, Austria*  
-**Feb 2023 – Jun 2023**  
+### *Study Abroad @ [Graz University of Technology](https://www.tugraz.at/home), Graz, Austria*
+**Feb 2023 – Jun 2023**
 Courses: **NLP, Recommender Systems, Social Media Technologies, Data Science & AI**
 
 
@@ -119,67 +119,67 @@ Courses: **NLP, Recommender Systems, Social Media Technologies, Data Science & A
 
 ## 2021
 
-### *Product Manager / Software Developer Intern @ MTLight, Montreal, QC*  
-**Sep 2021 – Nov 2021**  
+### *Product Manager / Software Developer Intern @ MTLight, Montreal, QC*
+**Sep 2021 – Nov 2021**
 Owned a **SvelteKit** app turning city murals into AR assets for municipal upkeep; drove roadmap, spec, and deployment with the CEO.
 
-### *DevOps Engineering Intern @ Lixar, Ottawa, ON*  
-**Jun 2021 – Aug 2021**  
+### *DevOps Engineering Intern @ Lixar, Ottawa, ON*
+**Jun 2021 – Aug 2021**
 Company-wide **GitHub Actions** templates for React/React Native; **AWS CodeDeploy** pipelines for a Spring Boot service; K8s PoCs for scale.
 
-### *Opinions Editor @ Imprint, Waterloo, ON*  
-**Jan 2021 – Dec 2021**  
+### *Opinions Editor @ Imprint, Waterloo, ON*
+**Jan 2021 – Dec 2021**
 Coordinated writers and topics; edited and published weekly/bi-weekly columns.
 
 
 ## 2020
 
-### *Software Engineering Intern @ Palomino, Toronto, ON*  
-**Sep 2020 – Dec 2020**  
+### *Software Engineering Intern @ Palomino, Toronto, ON*
+**Sep 2020 – Dec 2020**
 Ticketing app (PHP, Laravel, MySQL, Vue.js) with Zendesk integration + cron refresh; legacy jQuery/Ajax migration.
 
-### *News Writer @ Imprint, Waterloo, ON*  
-**Sep 2020 – Dec 2020**  
+### *News Writer @ Imprint, Waterloo, ON*
+**Sep 2020 – Dec 2020**
 Wrote weekly opinion pieces for the student-run paper.
 
-### *Full-Stack Development Intern @ IFDS, Toronto, ON*  
-**Jan 2020 – Apr 2020**  
+### *Full-Stack Development Intern @ IFDS, Toronto, ON*
+**Jan 2020 – Apr 2020**
 Automated Selenium suites; refactored Java onboarding flows; expense app (Python + React); **AWS Multipart Upload** for large files (**~30%** faster).
 
 
 ## 2019
 
-### *Biquadris @ CS246, Waterloo, ON*  
-**Nov 2019**  
-Implemented a two-player Tetris (“Biquadris”) in C++ with classic OOP patterns.  
+### *Biquadris @ CS246, Waterloo, ON*
+**Nov 2019**
+Implemented a two-player Tetris ("Biquadris") in C++ with classic OOP patterns.
 [GitHub](https://github.com/navyamehta/enhancedgamedev)
 
-### *Full-Stack Development Intern @ Cannect, Toronto, ON*  
-**Jun 2019 – Aug 2019**  
+### *Full-Stack Development Intern @ Cannect, Toronto, ON*
+**Jun 2019 – Aug 2019**
 Migrated React app (Bootstrap 3 → 4, mobile-first); maintained Vue.js + Rails; supported Docker → K8s migration.
 
-### *ShortStock @ StarterHacks, Waterloo, ON*  
-**Jan 2019**  
-Built a personalized stock-news feed with NLP categorization and an MLP classifier for relevance.  
+### *ShortStock @ StarterHacks, Waterloo, ON*
+**Jan 2019**
+Built a personalized stock-news feed with NLP categorization and an MLP classifier for relevance.
 [GitHub](https://github.com/akshay2000saxena/ShortStocks)
 
 
 ## 2018
 
-### *High School Graduation @ NPSk, Bangalore, KA*  
-**May 2018**  
+### *High School Graduation @ NPSk, Bangalore, KA*
+**May 2018**
 CBSE Grade 12: **96.8%**, CS: **100%**, School Rank: **#4**
 
-### *Scrabble @ NPSk, Bangalore, KA*  
-**Jan 2018**  
-Re-created Scrabble in C++ with OOP principles.  
+### *Scrabble @ NPSk, Bangalore, KA*
+**Jan 2018**
+Re-created Scrabble in C++ with OOP principles.
 [GitHub](https://github.com/rkaushik29/Scrabble)
 
 
 ## 2017
 
-### *Particle Physics Workshop @ CERN, Geneva, CH*  
-**Oct 2017**  
+### *Particle Physics Workshop @ CERN, Geneva, CH*
+**Oct 2017**
 Ten-day workshop focused on **CMS** at the LHC; selected as one of ~20 participants from India. Attended sessions at the **UN (Palais des Nations)**.
 
 ---
@@ -195,7 +195,7 @@ While working with the Open Search Foundation in the EU, I co-authored a technic
 
 ## Writings
 
-As part of internships and coursework, I’ve written several technical papers:
+As part of internships and coursework, I've written several technical papers:
 
 - [Fake News Detection](/files/fake_news_report.pdf)
 - [Sentiment Analysis of the 2020 US Elections](/files/sentiment_analysis.pdf)
@@ -214,7 +214,7 @@ As part of internships and coursework, I’ve written several technical papers:
 | :--- | :--- |
 | Siddhartha | Hermann Hesse |
 | The Complete Robot | Isaac Asimov |
-| Surely You’re Joking, Mr. Feynman! | Richard P. Feynman |
+| Surely You're Joking, Mr. Feynman! | Richard P. Feynman |
 | Make Something Wonderful: Steve Jobs in his own words | Steve Jobs |
 | Foundation (series) | Isaac Asimov |
 
@@ -224,12 +224,12 @@ You can find a longer, evolving list of my readings on my *[Notion reading list]
 
 A few podcasts that consistently make the rotation:
 
-- **Founders** — stories & lessons from iconic builders  
-- **Lightcone** — YC deep dives on tech, science, and the future  
-- **All-In** — markets, startups, and policy (with healthy debate)  
-- **Lex Fridman Podcast** — long-form conversations across science & engineering  
+- **Founders** — stories & lessons from iconic builders
+- **Lightcone** — YC deep dives on tech, science, and the future
+- **All-In** — markets, startups, and policy (with healthy debate)
+- **Lex Fridman Podcast** — long-form conversations across science & engineering
 
-[^1]: My *[author profile](http://uwimprint.ca/article/author/rohit-kaushik/)* contains articles I wrote for UWaterloo’s student newspaper.
+[^1]: My *[author profile](http://uwimprint.ca/article/author/rohit-kaushik/)* contains articles I wrote for UWaterloo's student newspaper.
 
 ---
 
