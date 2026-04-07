@@ -1,15 +1,143 @@
-<!DOCTYPE html><html lang="en" data-theme="dark"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>annotation-extractor | Rohit Kaushik</title><meta name="description" content="MCP server for extracting annotations, highlights, and reading progress from e-readers. Supports Kobo, Kindle, and Boox."><meta name="generator" content="Astro v5.18.1"><link rel="canonical" href="https://rkaushik29.github.io/projects/annotation-extractor/"><!-- Open Graph --><meta property="og:title" content="annotation-extractor | Rohit Kaushik"><meta property="og:description" content="MCP server for extracting annotations, highlights, and reading progress from e-readers. Supports Kobo, Kindle, and Boox."><meta property="og:url" content="https://rkaushik29.github.io/projects/annotation-extractor/"><meta property="og:site_name" content="Rohit Kaushik"><meta property="og:type" content="website"><!-- Twitter --><meta name="twitter:card" content="summary"><meta name="twitter:title" content="annotation-extractor | Rohit Kaushik"><meta name="twitter:description" content="MCP server for extracting annotations, highlights, and reading progress from e-readers. Supports Kobo, Kindle, and Boox."><!-- Prevent FOUC: set theme before paint --><script>
+<!DOCTYPE html><html lang="en" data-theme="dark"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>annotation-extractor | Rohit Kaushik</title><meta name="description" content="MCP server for extracting annotations, highlights, and reading progress from e-readers. Supports Kobo, Kindle, and Boox."><meta name="generator" content="Astro v5.18.1"><link rel="canonical" href="https://rkaushik29.github.io/projects/annotation-extractor/"><!-- Open Graph --><meta property="og:title" content="annotation-extractor | Rohit Kaushik"><meta property="og:description" content="MCP server for extracting annotations, highlights, and reading progress from e-readers. Supports Kobo, Kindle, and Boox."><meta property="og:url" content="https://rkaushik29.github.io/projects/annotation-extractor/"><meta property="og:site_name" content="Rohit Kaushik"><meta property="og:type" content="website"><!-- Twitter --><meta name="twitter:card" content="summary"><meta name="twitter:title" content="annotation-extractor | Rohit Kaushik"><meta name="twitter:description" content="MCP server for extracting annotations, highlights, and reading progress from e-readers. Supports Kobo, Kindle, and Boox."><script type="text/llms.txt"># annotation-extractor
+
+MCP server for extracting annotations, highlights, and reading progress from e-readers. Supports Kobo, Kindle, and Boox.
+
+## Install
+
+```bash
+pip install annotation-extractor
+```
+
+Or from source:
+
+```bash
+git clone https://github.com/rkaushik29/annotation-extractor-mcp.git
+cd annotation-extractor
+pip install -e .
+```
+
+## Agent Skill
+
+Also available as a reusable agent skill via [skills.sh](https://skills.sh). Install for any AI coding agent:
+
+```bash
+npx skills add rkaushik29/annotation-extractor-mcp
+```
+
+This teaches agents like Claude Code, Cursor, Gemini CLI, GitHub Copilot, and 40+ others how to set up and use the annotation extractor — including auto-installing the package and configuring the MCP server.
+
+## Usage
+
+Connect your e-reader via USB, add the MCP server to your agent, and start asking questions about your reading.
+
+| Client | Setup |
+|--------|-------|
+| Claude Code | `claude mcp add annotations -- annotation-extractor` |
+| Claude Desktop | Add to `claude_desktop_config.json` |
+| OpenClaw | `openclaw mcp add annotations -- annotation-extractor` |
+| Gemini CLI | Add to `~/.gemini/settings.json` |
+| Codex | `codex --mcp-config mcp.json` |
+
+JSON config:
+
+```json
+{
+  "mcpServers": {
+    "annotations": {
+      "command": "annotation-extractor"
+    }
+  }
+}
+```
+
+### Try it out
+
+> "What are my highlights from the last book I read?"
+> "Search my annotations for anything about consciousness"
+> "Show me all the notes I took while reading Neuromancer"
+
+## Supported E-Readers
+
+| Reader | Data Source |
+|--------|-------------|
+| Kobo | `.kobo/KoboReader.sqlite` via USB |
+| Kindle | `My Clippings.txt` via USB |
+| Boox | Annotation export directory (one `.txt` per book) via USB |
+
+## Tools
+
+| Tool | Description |
+|------|-------------|
+| `list_books` | List all books, optionally filtered to those with annotations |
+| `get_annotations` | Get highlights and notes for a specific book (by title or ID) |
+| `search_annotations` | Full-text search across all highlights and notes |
+| `get_reading_progress` | Reading progress, time spent, and status for all books |
+| `get_book_details` | Detailed metadata for a specific book |
+
+All tools accept optional `backend_name` (e.g. "kobo", "kindle", "boox") and `db_path` parameters.
+
+## Environment Variables
+
+| Variable | Backend |
+|----------|---------|
+| `KOBO_DB_PATH` | Kobo |
+| `KINDLE_CLIPPINGS_PATH` | Kindle |
+| `BOOX_EXPORT_PATH` | Boox |
+
+## Development
+
+```bash
+git clone https://github.com/rkaushik29/annotation-extractor-mcp.git
+cd annotation-extractor
+pip install -e ".[dev]"
+pytest
+```
+
+The project uses a pluggable backend architecture. To add a new e-reader, implement the `EReaderBackend` abstract class and register it in `registry.py`.
+</script><!-- Prevent FOUC: set theme before paint --><script>
       (function() {
         const theme = localStorage.getItem('theme') ||
           (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
         document.documentElement.setAttribute('data-theme', theme);
       })();
-    </script><link rel="stylesheet" href="/_astro/about.3lvvMMUJ.css">
-<link rel="stylesheet" href="/_astro/about.BzmUMuEQ.css"></head> <body>  <div class="min-h-screen flex flex-col"> <header class="sticky top-0 z-50 bg-bg-header/95 backdrop-blur-sm" style="border-bottom: 1px solid rgba(78,78,87,0.15);"> <nav class="max-w-content mx-auto px-6 h-14 flex items-center justify-between"> <a href="/" class="flex items-center gap-0 no-underline group"> <span class="text-text-secondary font-mono text-sm font-medium opacity-70 group-hover:opacity-100 transition-opacity">
+    </script><link rel="stylesheet" href="/_astro/about.BQb3t3oq.css">
+<link rel="stylesheet" href="/_astro/about.BxtLx1MQ.css"></head> <body>  <div class="min-h-screen flex flex-col"> <header class="sticky top-0 z-50 bg-bg-header/95 backdrop-blur-sm" style="border-bottom: 1px solid rgba(78,78,87,0.15);"> <nav class="max-w-content mx-auto px-6 h-14 flex items-center justify-between"> <a href="/" class="flex items-center gap-0 no-underline group"> <span class="text-text-secondary font-mono text-sm font-medium opacity-70 group-hover:opacity-100 transition-opacity">
 &gt;&nbsp;
 </span> <span class="font-mono text-sm font-semibold text-text-heading group-hover:text-accent transition-colors duration-200"> rohitkaushik </span> <span class="font-mono text-sm font-semibold text-accent cursor-blink">
 $
-</span> <span class="inline-block w-2 h-4 bg-accent cursor-blink ml-0.5 rounded-sm"></span> </a> <div class="flex items-center gap-6"> <!-- Desktop nav --> <ul class="hidden sm:flex items-center gap-5 list-none m-0 p-0"> <li> <a href="/about" class="text-text-secondary hover:text-text-heading text-sm font-medium transition-colors duration-200 no-underline"> about </a> </li><li> <a href="/#projects" class="text-text-secondary hover:text-text-heading text-sm font-medium transition-colors duration-200 no-underline"> projects </a> </li><li> <a href="/library" class="text-text-secondary hover:text-text-heading text-sm font-medium transition-colors duration-200 no-underline"> library </a> </li><li> <a href="/work" class="text-text-secondary hover:text-text-heading text-sm font-medium transition-colors duration-200 no-underline"> work </a> </li> </ul> <div class="flex items-center gap-3">  <button id="theme-toggle" class="p-1.5 rounded-md bg-transparent border-none cursor-pointer text-text-secondary hover:text-text-heading transition-all duration-200" aria-label="Toggle theme"> <!-- Moon icon (shown in dark mode) --> <svg id="theme-moon" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"> <path stroke-linecap="round" stroke-linejoin="round" d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path> </svg> <!-- Sun icon (shown in light mode) --> <svg id="theme-sun" class="w-4 h-4 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"> <circle cx="12" cy="12" r="5"></circle> <line x1="12" y1="1" x2="12" y2="3"></line> <line x1="12" y1="21" x2="12" y2="23"></line> <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line> <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line> <line x1="1" y1="12" x2="3" y2="12"></line> <line x1="21" y1="12" x2="23" y2="12"></line> <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line> <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line> </svg> </button> <script>
+</span> <span class="inline-block w-2 h-4 bg-accent cursor-blink ml-0.5 rounded-sm"></span> </a> <div class="flex items-center gap-6"> <!-- Desktop nav --> <ul class="hidden sm:flex items-center gap-5 list-none m-0 p-0"> <li> <a href="/about" class="text-text-secondary hover:text-text-heading text-sm font-medium transition-colors duration-200 no-underline"> about </a> </li><li> <a href="/projects" class="text-text-secondary hover:text-text-heading text-sm font-medium transition-colors duration-200 no-underline"> projects </a> </li><li> <a href="/library" class="text-text-secondary hover:text-text-heading text-sm font-medium transition-colors duration-200 no-underline"> library </a> </li><li> <a href="/work" class="text-text-secondary hover:text-text-heading text-sm font-medium transition-colors duration-200 no-underline"> work </a> </li> </ul> <div class="flex items-center gap-3"> <button id="agent-toggle" class="p-1.5 rounded-md bg-transparent border-none cursor-pointer text-text-secondary hover:text-text-heading transition-all duration-200" aria-label="Toggle agent-friendly view" title="Toggle raw markdown view"> <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"> <polyline points="16 18 22 12 16 6"></polyline> <polyline points="8 6 2 12 8 18"></polyline> </svg> </button> <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const btn = document.getElementById('agent-toggle');
+    let isRaw = false;
+
+    function setView(showRaw) {
+      isRaw = showRaw;
+      var rendered = document.getElementById('rendered-view');
+      var raw = document.getElementById('raw-view');
+      if (rendered && raw) {
+        rendered.style.display = showRaw ? 'none' : 'block';
+        raw.style.display = showRaw ? 'block' : 'none';
+      }
+      if (btn) {
+        btn.classList.toggle('text-accent', showRaw);
+      }
+      var url = new URL(window.location);
+      if (showRaw) {
+        url.searchParams.set('agent', 'true');
+      } else {
+        url.searchParams.delete('agent');
+      }
+      history.replaceState(null, '', url);
+    }
+
+    // Check URL param on load
+    if (new URLSearchParams(window.location.search).get('agent') === 'true') {
+      setView(true);
+    }
+
+    btn?.addEventListener('click', function() { setView(!isRaw); });
+  });
+</script> <button id="theme-toggle" class="p-1.5 rounded-md bg-transparent border-none cursor-pointer text-text-secondary hover:text-text-heading transition-all duration-200" aria-label="Toggle theme"> <!-- Moon icon (shown in dark mode) --> <svg id="theme-moon" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"> <path stroke-linecap="round" stroke-linejoin="round" d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path> </svg> <!-- Sun icon (shown in light mode) --> <svg id="theme-sun" class="w-4 h-4 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"> <circle cx="12" cy="12" r="5"></circle> <line x1="12" y1="1" x2="12" y2="3"></line> <line x1="12" y1="21" x2="12" y2="23"></line> <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line> <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line> <line x1="1" y1="12" x2="3" y2="12"></line> <line x1="21" y1="12" x2="23" y2="12"></line> <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line> <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line> </svg> </button> <script>
   (function() {
     const btn = document.getElementById('theme-toggle');
     const moon = document.getElementById('theme-moon');
@@ -33,11 +161,18 @@ $
       updateIcons();
     });
   })();
-</script> </div> <!-- Mobile hamburger --> <button id="menu-toggle" class="sm:hidden flex flex-col gap-1 p-1 bg-transparent border-none cursor-pointer" aria-label="Toggle menu"> <span class="block w-5 h-0.5 bg-text transition-transform duration-200"></span> <span class="block w-5 h-0.5 bg-text transition-opacity duration-200"></span> <span class="block w-5 h-0.5 bg-text transition-transform duration-200"></span> </button> </div> </nav> <!-- Mobile menu --> <div id="mobile-menu" class="sm:hidden hidden border-t border-border/20 bg-bg-header"> <ul class="flex flex-col list-none m-0 p-4 gap-3"> <li> <a href="/about" class="text-text-secondary hover:text-text-heading text-sm font-medium transition-colors duration-200 no-underline"> about </a> </li><li> <a href="/#projects" class="text-text-secondary hover:text-text-heading text-sm font-medium transition-colors duration-200 no-underline"> projects </a> </li><li> <a href="/library" class="text-text-secondary hover:text-text-heading text-sm font-medium transition-colors duration-200 no-underline"> library </a> </li><li> <a href="/work" class="text-text-secondary hover:text-text-heading text-sm font-medium transition-colors duration-200 no-underline"> work </a> </li> </ul> </div> </header> <script type="module">const e=document.getElementById("menu-toggle"),t=document.getElementById("mobile-menu");e?.addEventListener("click",()=>{t?.classList.toggle("hidden")});</script> <main class="flex-1 w-full max-w-[1100px] mx-auto px-6 py-12"> <div class="lg:grid lg:grid-cols-[1fr_200px] lg:gap-12"> <!-- Main content --> <article class="prose prose-docs min-w-0"> <div class="mb-2"> <a href="/" class="text-text-secondary text-sm hover:text-link transition-colors">&larr; back</a> </div> <h1>annotation-extractor</h1> <p class="text-text-secondary text-lg -mt-4 mb-2"> MCP server for extracting annotations, highlights, and reading progress from e-readers. Supports Kobo, Kindle, and Boox. </p> <div class="flex flex-wrap gap-2 mb-8"> <span class="text-xs font-mono px-2 py-0.5 rounded-full border border-border text-text-secondary"> mcp </span><span class="text-xs font-mono px-2 py-0.5 rounded-full border border-border text-text-secondary"> tools </span><span class="text-xs font-mono px-2 py-0.5 rounded-full border border-border text-text-secondary"> agents </span> <a href="https://github.com/rkaushik29/annotation-extractor-mcp" target="_blank" rel="noopener noreferrer" class="text-xs font-mono px-2 py-0.5 rounded-full border border-border text-link no-underline hover:border-link">
+</script> </div> <!-- Mobile hamburger --> <button id="menu-toggle" class="sm:hidden flex flex-col gap-1 p-1 bg-transparent border-none cursor-pointer" aria-label="Toggle menu"> <span class="block w-5 h-0.5 bg-text transition-transform duration-200"></span> <span class="block w-5 h-0.5 bg-text transition-opacity duration-200"></span> <span class="block w-5 h-0.5 bg-text transition-transform duration-200"></span> </button> </div> </nav> <!-- Mobile menu --> <div id="mobile-menu" class="sm:hidden hidden border-t border-border/20 bg-bg-header"> <ul class="flex flex-col list-none m-0 p-4 gap-3"> <li> <a href="/about" class="text-text-secondary hover:text-text-heading text-sm font-medium transition-colors duration-200 no-underline"> about </a> </li><li> <a href="/projects" class="text-text-secondary hover:text-text-heading text-sm font-medium transition-colors duration-200 no-underline"> projects </a> </li><li> <a href="/library" class="text-text-secondary hover:text-text-heading text-sm font-medium transition-colors duration-200 no-underline"> library </a> </li><li> <a href="/work" class="text-text-secondary hover:text-text-heading text-sm font-medium transition-colors duration-200 no-underline"> work </a> </li> </ul> </div> </header> <script type="module">const e=document.getElementById("menu-toggle"),t=document.getElementById("mobile-menu");e?.addEventListener("click",()=>{t?.classList.toggle("hidden")});</script> <main class="flex-1 w-full max-w-[1100px] mx-auto px-6 py-12"> <div id="rendered-view" class="lg:grid lg:grid-cols-[1fr_200px] lg:gap-12"> <!-- Main content --> <article class="prose prose-docs min-w-0"> <div class="mb-2"> <a href="/projects" class="text-text-secondary text-sm hover:text-link transition-colors">&larr; projects</a> </div> <h1>annotation-extractor</h1> <p class="text-text-secondary text-lg -mt-4 mb-2"> MCP server for extracting annotations, highlights, and reading progress from e-readers. Supports Kobo, Kindle, and Boox. </p> <div class="flex flex-wrap gap-2 mb-8"> <span class="text-xs font-mono px-2 py-0.5 rounded-full border border-border text-text-secondary"> mcp </span><span class="text-xs font-mono px-2 py-0.5 rounded-full border border-border text-text-secondary"> tools </span><span class="text-xs font-mono px-2 py-0.5 rounded-full border border-border text-text-secondary"> agents </span> <a href="https://github.com/rkaushik29/annotation-extractor-mcp" target="_blank" rel="noopener noreferrer" class="text-xs font-mono px-2 py-0.5 rounded-full border border-border text-link no-underline hover:border-link">
 github
 </a> </div> <h2 id="install">Install</h2> <pre><code>pip install annotation-extractor</code></pre> <p>Or from source:</p> <pre><code>git clone https://github.com/rkaushik29/annotation-extractor-mcp.git
 cd annotation-extractor
-pip install -e .</code></pre> <h2 id="usage">Usage</h2> <p>
+pip install -e .</code></pre> <h2 id="agent-skill">Agent Skill</h2> <p>
+Also available as a reusable agent skill via <a href="https://skills.sh" target="_blank" rel="noopener noreferrer">skills.sh</a>.
+            Install for any AI coding agent:
+</p> <pre><code>npx skills add rkaushik29/annotation-extractor-mcp</code></pre> <p>
+This teaches agents like Claude Code, Cursor, Gemini CLI, GitHub Copilot, and 40+ others
+            how to set up and use the annotation extractor &mdash; including auto-installing the package
+            and configuring the MCP server.
+</p> <h2 id="usage">Usage</h2> <p>
 Connect your e-reader via USB, add the MCP server to your agent, and start asking questions about your reading.
 </p> <table> <thead> <tr> <th>Client</th> <th>Setup</th> </tr> </thead> <tbody> <tr> <td>Claude Code</td> <td><code>claude mcp add annotations -- annotation-extractor</code></td> </tr> <tr> <td>Claude Desktop</td> <td>Add to <code>claude_desktop_config.json</code></td> </tr> <tr> <td>OpenClaw</td> <td><code>openclaw mcp add annotations -- annotation-extractor</code></td> </tr> <tr> <td>Gemini CLI</td> <td>Add to <code>~/.gemini/settings.json</code></td> </tr> <tr> <td>Codex</td> <td><code>codex --mcp-config mcp.json</code></td> </tr> </tbody> </table> <p>For JSON config clients, use:</p> <pre><code>{
   &quot;mcpServers&quot;: {
@@ -55,4 +190,100 @@ pytest</code></pre> <p>
 The project uses a pluggable backend architecture.
             To add a new e-reader, implement the <code>EReaderBackend</code> abstract class
             and register it in <code>registry.py</code>.
-</p> </article> <!-- Sidebar TOC --> <aside class="hidden lg:block"> <nav class="sticky top-20"> <p class="text-text-heading text-sm font-semibold mb-3">On this page</p> <ul class="list-none p-0 m-0 space-y-2"> <li> <a href="#install" class="text-text-secondary text-sm hover:text-link transition-colors no-underline"> Install </a> </li><li> <a href="#usage" class="text-text-secondary text-sm hover:text-link transition-colors no-underline"> Usage </a> </li><li> <a href="#supported-e-readers" class="text-text-secondary text-sm hover:text-link transition-colors no-underline"> Supported E-Readers </a> </li><li> <a href="#tools" class="text-text-secondary text-sm hover:text-link transition-colors no-underline"> Tools </a> </li><li> <a href="#environment-variables" class="text-text-secondary text-sm hover:text-link transition-colors no-underline"> Environment Variables </a> </li><li> <a href="#development" class="text-text-secondary text-sm hover:text-link transition-colors no-underline"> Development </a> </li> </ul> </nav> </aside> </div> </main> <footer class="py-8 text-center text-sm text-text-secondary"> <p>© 2026</p> </footer> </div>  </body></html>
+</p> </article> <!-- Sidebar TOC --> <aside class="hidden lg:block"> <nav class="sticky top-20"> <p class="text-text-heading text-sm font-semibold mb-3">On this page</p> <ul class="list-none p-0 m-0 space-y-2"> <li> <a href="#install" class="text-text-secondary text-sm hover:text-link transition-colors no-underline"> Install </a> </li><li> <a href="#agent-skill" class="text-text-secondary text-sm hover:text-link transition-colors no-underline"> Agent Skill </a> </li><li> <a href="#usage" class="text-text-secondary text-sm hover:text-link transition-colors no-underline"> Usage </a> </li><li> <a href="#supported-e-readers" class="text-text-secondary text-sm hover:text-link transition-colors no-underline"> Supported E-Readers </a> </li><li> <a href="#tools" class="text-text-secondary text-sm hover:text-link transition-colors no-underline"> Tools </a> </li><li> <a href="#environment-variables" class="text-text-secondary text-sm hover:text-link transition-colors no-underline"> Environment Variables </a> </li><li> <a href="#development" class="text-text-secondary text-sm hover:text-link transition-colors no-underline"> Development </a> </li> </ul> </nav> </aside> </div> <div id="raw-view" style="display: none;"> <pre class="agent-raw-markdown"><code># annotation-extractor
+
+MCP server for extracting annotations, highlights, and reading progress from e-readers. Supports Kobo, Kindle, and Boox.
+
+## Install
+
+```bash
+pip install annotation-extractor
+```
+
+Or from source:
+
+```bash
+git clone https://github.com/rkaushik29/annotation-extractor-mcp.git
+cd annotation-extractor
+pip install -e .
+```
+
+## Agent Skill
+
+Also available as a reusable agent skill via [skills.sh](https://skills.sh). Install for any AI coding agent:
+
+```bash
+npx skills add rkaushik29/annotation-extractor-mcp
+```
+
+This teaches agents like Claude Code, Cursor, Gemini CLI, GitHub Copilot, and 40+ others how to set up and use the annotation extractor — including auto-installing the package and configuring the MCP server.
+
+## Usage
+
+Connect your e-reader via USB, add the MCP server to your agent, and start asking questions about your reading.
+
+| Client | Setup |
+|--------|-------|
+| Claude Code | `claude mcp add annotations -- annotation-extractor` |
+| Claude Desktop | Add to `claude_desktop_config.json` |
+| OpenClaw | `openclaw mcp add annotations -- annotation-extractor` |
+| Gemini CLI | Add to `~/.gemini/settings.json` |
+| Codex | `codex --mcp-config mcp.json` |
+
+JSON config:
+
+```json
+{
+  &quot;mcpServers&quot;: {
+    &quot;annotations&quot;: {
+      &quot;command&quot;: &quot;annotation-extractor&quot;
+    }
+  }
+}
+```
+
+### Try it out
+
+&gt; &quot;What are my highlights from the last book I read?&quot;
+&gt; &quot;Search my annotations for anything about consciousness&quot;
+&gt; &quot;Show me all the notes I took while reading Neuromancer&quot;
+
+## Supported E-Readers
+
+| Reader | Data Source |
+|--------|-------------|
+| Kobo | `.kobo/KoboReader.sqlite` via USB |
+| Kindle | `My Clippings.txt` via USB |
+| Boox | Annotation export directory (one `.txt` per book) via USB |
+
+## Tools
+
+| Tool | Description |
+|------|-------------|
+| `list_books` | List all books, optionally filtered to those with annotations |
+| `get_annotations` | Get highlights and notes for a specific book (by title or ID) |
+| `search_annotations` | Full-text search across all highlights and notes |
+| `get_reading_progress` | Reading progress, time spent, and status for all books |
+| `get_book_details` | Detailed metadata for a specific book |
+
+All tools accept optional `backend_name` (e.g. &quot;kobo&quot;, &quot;kindle&quot;, &quot;boox&quot;) and `db_path` parameters.
+
+## Environment Variables
+
+| Variable | Backend |
+|----------|---------|
+| `KOBO_DB_PATH` | Kobo |
+| `KINDLE_CLIPPINGS_PATH` | Kindle |
+| `BOOX_EXPORT_PATH` | Boox |
+
+## Development
+
+```bash
+git clone https://github.com/rkaushik29/annotation-extractor-mcp.git
+cd annotation-extractor
+pip install -e &quot;.[dev]&quot;
+pytest
+```
+
+The project uses a pluggable backend architecture. To add a new e-reader, implement the `EReaderBackend` abstract class and register it in `registry.py`.
+</code></pre> </div> </main> <footer class="py-8 text-center text-sm text-text-secondary"> <p>© 2026</p> </footer> </div>  </body></html>
