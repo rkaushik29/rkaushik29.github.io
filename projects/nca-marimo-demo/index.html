@@ -1,0 +1,164 @@
+<!DOCTYPE html><html lang="en" data-theme="dark"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Training Language Models via Neural Cellular Automata: marimo demo | Rohit Kaushik</title><meta name="description" content="Interactive marimo notebook unpacking how NCA pre-pre-training improves language-model reasoning and transfer."><meta name="generator" content="Astro v5.18.1"><link rel="canonical" href="https://rkaushik29.github.io/projects/nca-marimo-demo/"><!-- Open Graph --><meta property="og:title" content="Training Language Models via Neural Cellular Automata: marimo demo | Rohit Kaushik"><meta property="og:description" content="Interactive marimo notebook unpacking how NCA pre-pre-training improves language-model reasoning and transfer."><meta property="og:url" content="https://rkaushik29.github.io/projects/nca-marimo-demo/"><meta property="og:site_name" content="Rohit Kaushik"><meta property="og:type" content="website"><!-- Twitter --><meta name="twitter:card" content="summary"><meta name="twitter:title" content="Training Language Models via Neural Cellular Automata: marimo demo | Rohit Kaushik"><meta name="twitter:description" content="Interactive marimo notebook unpacking how NCA pre-pre-training improves language-model reasoning and transfer."><script type="text/llms.txt"># Training Language Models via Neural Cellular Automata: marimo demo
+
+Interactive marimo notebook unpacking how NCA pre-pre-training improves language-model reasoning and transfer.
+
+## What It Is
+
+This project is an interactive marimo notebook based on the paper **Training Language Models via Neural Cellular Automata**.
+
+It explains the core idea of NCA pre-pre-training with live visualizations, experiments, and controls you can tweak directly in-browser.
+
+## Access
+
+- GitHub repository: https://github.com/rkaushik29/alphaxiv-marimo-notebook-comp
+- Paper: https://arxiv.org/abs/2603.10055
+
+## Run Locally
+
+```bash
+git clone https://github.com/rkaushik29/alphaxiv-marimo-notebook-comp.git
+cd alphaxiv-marimo-notebook-comp
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install --upgrade pip
+pip install marimo numpy
+marimo run notebook.py
+```
+
+Then open:
+
+```bash
+marimo edit notebook.py
+```
+
+## Inside the Demo
+
+- Side-by-side Game of Life vs Neural Cellular Automata behavior
+- Live complexity analysis with gzip-based scoring
+- Tokenization and transfer intuition sections for NCA pre-pre-training
+</script><!-- Prevent FOUC: set theme before paint --><script>
+      (function() {
+        const theme = localStorage.getItem('theme') ||
+          (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+      })();
+    </script><link rel="stylesheet" href="/_astro/about.BQb3t3oq.css">
+<link rel="stylesheet" href="/_astro/about.gyKY5mG6.css"></head> <body>  <div class="min-h-screen flex flex-col"> <header class="sticky top-0 z-50 bg-bg-header/95 backdrop-blur-sm" style="border-bottom: 1px solid rgba(78,78,87,0.15);"> <nav class="max-w-content mx-auto px-6 h-14 flex items-center justify-between"> <a href="/" class="flex items-center gap-0 no-underline group"> <span class="text-text-secondary font-mono text-sm font-medium opacity-70 group-hover:opacity-100 transition-opacity">
+&gt;&nbsp;
+</span> <span class="font-mono text-sm font-semibold text-text-heading group-hover:text-accent transition-colors duration-200"> rohitkaushik </span> <span class="font-mono text-sm font-semibold text-accent cursor-blink">
+$
+</span> <span class="inline-block w-2 h-4 bg-accent cursor-blink ml-0.5 rounded-sm"></span> </a> <div class="flex items-center gap-6"> <!-- Desktop nav --> <ul class="hidden sm:flex items-center gap-5 list-none m-0 p-0"> <li> <a href="/about" class="text-text-secondary hover:text-text-heading text-sm font-medium transition-colors duration-200 no-underline"> about </a> </li><li> <a href="/projects" class="text-text-secondary hover:text-text-heading text-sm font-medium transition-colors duration-200 no-underline"> projects </a> </li><li> <a href="/library" class="text-text-secondary hover:text-text-heading text-sm font-medium transition-colors duration-200 no-underline"> library </a> </li><li> <a href="/work" class="text-text-secondary hover:text-text-heading text-sm font-medium transition-colors duration-200 no-underline"> work </a> </li> </ul> <div class="flex items-center gap-3"> <button id="agent-toggle" class="p-1.5 rounded-md bg-transparent border-none cursor-pointer text-text-secondary hover:text-text-heading transition-all duration-200" aria-label="Toggle agent-friendly view" title="Toggle raw markdown view"> <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"> <polyline points="16 18 22 12 16 6"></polyline> <polyline points="8 6 2 12 8 18"></polyline> </svg> </button> <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const btn = document.getElementById('agent-toggle');
+    let isRaw = false;
+
+    function setView(showRaw) {
+      isRaw = showRaw;
+      var rendered = document.getElementById('rendered-view');
+      var raw = document.getElementById('raw-view');
+      if (rendered && raw) {
+        rendered.style.display = showRaw ? 'none' : 'block';
+        raw.style.display = showRaw ? 'block' : 'none';
+      }
+      if (btn) {
+        btn.classList.toggle('text-accent', showRaw);
+      }
+      var url = new URL(window.location);
+      if (showRaw) {
+        url.searchParams.set('agent', 'true');
+      } else {
+        url.searchParams.delete('agent');
+      }
+      history.replaceState(null, '', url);
+    }
+
+    // Check URL param on load
+    if (new URLSearchParams(window.location.search).get('agent') === 'true') {
+      setView(true);
+    }
+
+    btn?.addEventListener('click', function() { setView(!isRaw); });
+  });
+</script> <button id="theme-toggle" class="p-1.5 rounded-md bg-transparent border-none cursor-pointer text-text-secondary hover:text-text-heading transition-all duration-200" aria-label="Toggle theme"> <!-- Moon icon (shown in dark mode) --> <svg id="theme-moon" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"> <path stroke-linecap="round" stroke-linejoin="round" d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path> </svg> <!-- Sun icon (shown in light mode) --> <svg id="theme-sun" class="w-4 h-4 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"> <circle cx="12" cy="12" r="5"></circle> <line x1="12" y1="1" x2="12" y2="3"></line> <line x1="12" y1="21" x2="12" y2="23"></line> <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line> <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line> <line x1="1" y1="12" x2="3" y2="12"></line> <line x1="21" y1="12" x2="23" y2="12"></line> <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line> <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line> </svg> </button> <script>
+  (function() {
+    const btn = document.getElementById('theme-toggle');
+    const moon = document.getElementById('theme-moon');
+    const sun = document.getElementById('theme-sun');
+
+    function updateIcons() {
+      const isDark = document.documentElement.getAttribute('data-theme') !== 'light';
+      if (moon && sun) {
+        moon.classList.toggle('hidden', !isDark);
+        sun.classList.toggle('hidden', isDark);
+      }
+    }
+
+    updateIcons();
+
+    btn?.addEventListener('click', () => {
+      const current = document.documentElement.getAttribute('data-theme');
+      const next = current === 'light' ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('theme', next);
+      updateIcons();
+    });
+  })();
+</script> </div> <!-- Mobile hamburger --> <button id="menu-toggle" class="sm:hidden flex flex-col gap-1 p-1 bg-transparent border-none cursor-pointer" aria-label="Toggle menu"> <span class="block w-5 h-0.5 bg-text transition-transform duration-200"></span> <span class="block w-5 h-0.5 bg-text transition-opacity duration-200"></span> <span class="block w-5 h-0.5 bg-text transition-transform duration-200"></span> </button> </div> </nav> <!-- Mobile menu --> <div id="mobile-menu" class="sm:hidden hidden border-t border-border/20 bg-bg-header"> <ul class="flex flex-col list-none m-0 p-4 gap-3"> <li> <a href="/about" class="text-text-secondary hover:text-text-heading text-sm font-medium transition-colors duration-200 no-underline"> about </a> </li><li> <a href="/projects" class="text-text-secondary hover:text-text-heading text-sm font-medium transition-colors duration-200 no-underline"> projects </a> </li><li> <a href="/library" class="text-text-secondary hover:text-text-heading text-sm font-medium transition-colors duration-200 no-underline"> library </a> </li><li> <a href="/work" class="text-text-secondary hover:text-text-heading text-sm font-medium transition-colors duration-200 no-underline"> work </a> </li> </ul> </div> </header> <script type="module">const e=document.getElementById("menu-toggle"),t=document.getElementById("mobile-menu");e?.addEventListener("click",()=>{t?.classList.toggle("hidden")});</script> <main class="flex-1 w-full max-w-[1100px] mx-auto px-6 py-12"> <div id="rendered-view" class="lg:grid lg:grid-cols-[1fr_200px] lg:gap-12"> <article class="prose prose-docs min-w-0"> <div class="mb-2"> <a href="/projects" class="text-text-secondary text-sm hover:text-link transition-colors">&larr; projects</a> </div> <h1>Training Language Models via Neural Cellular Automata: marimo demo</h1> <p class="text-text-secondary text-lg -mt-4 mb-2"> Interactive marimo notebook unpacking how NCA pre-pre-training improves language-model reasoning and transfer. </p> <div class="flex flex-wrap gap-2 mb-8"> <span class="text-xs font-mono px-2 py-0.5 rounded-full border border-border text-text-secondary"> marimo </span><span class="text-xs font-mono px-2 py-0.5 rounded-full border border-border text-text-secondary"> research </span><span class="text-xs font-mono px-2 py-0.5 rounded-full border border-border text-text-secondary"> llms </span> <a href="https://github.com/rkaushik29/alphaxiv-marimo-notebook-comp" target="_blank" rel="noopener noreferrer" class="text-xs font-mono px-2 py-0.5 rounded-full border border-border text-link no-underline hover:border-link">
+github
+</a> </div> <h2 id="what-it-is">What it is</h2> <p>
+This is an interactive marimo notebook based on the paper <em>Training Language Models via Neural Cellular Automata</em>.
+            It turns the paper into a hands-on walkthrough with visual explanations, sliders, and experiments.
+</p> <p>
+The notebook focuses on how NCA-generated synthetic sequences can improve downstream language-model transfer
+            and reasoning efficiency before standard language pre-training.
+</p> <h2 id="access">Where to access it</h2> <ul> <li>
+GitHub repo:  <a href="https://github.com/rkaushik29/alphaxiv-marimo-notebook-comp" target="_blank" rel="noopener noreferrer">
+github.com/rkaushik29/alphaxiv-marimo-notebook-comp
+</a> </li> <li>
+Paper:  <a href="https://arxiv.org/abs/2603.10055" target="_blank" rel="noopener noreferrer">
+arxiv.org/abs/2603.10055
+</a> </li> </ul> <h2 id="run-locally">How to run locally</h2> <pre><code>git clone https://github.com/rkaushik29/alphaxiv-marimo-notebook-comp.git
+cd alphaxiv-marimo-notebook-comp
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install --upgrade pip
+pip install marimo numpy
+marimo run notebook.py</code></pre> <p>For notebook editing mode:</p> <pre><code>marimo edit notebook.py</code></pre> <h2 id="inside-the-demo">Inside the demo</h2> <ul> <li>Side-by-side comparison of Game of Life and Neural Cellular Automata dynamics</li> <li>Interactive complexity explorer using gzip-based trajectory scoring</li> <li>Transfer-learning intuition for why NCA pre-pre-training can help language models</li> </ul> </article> <aside class="hidden lg:block"> <nav class="sticky top-20"> <p class="text-text-heading text-sm font-semibold mb-3">On this page</p> <ul class="list-none p-0 m-0 space-y-2"> <li> <a href="#what-it-is" class="text-text-secondary text-sm hover:text-link transition-colors no-underline"> What It Is </a> </li><li> <a href="#access" class="text-text-secondary text-sm hover:text-link transition-colors no-underline"> Access </a> </li><li> <a href="#run-locally" class="text-text-secondary text-sm hover:text-link transition-colors no-underline"> Run Locally </a> </li><li> <a href="#inside-the-demo" class="text-text-secondary text-sm hover:text-link transition-colors no-underline"> Inside the Demo </a> </li> </ul> </nav> </aside> </div> <div id="raw-view" style="display: none;"> <pre class="agent-raw-markdown"><code># Training Language Models via Neural Cellular Automata: marimo demo
+
+Interactive marimo notebook unpacking how NCA pre-pre-training improves language-model reasoning and transfer.
+
+## What It Is
+
+This project is an interactive marimo notebook based on the paper **Training Language Models via Neural Cellular Automata**.
+
+It explains the core idea of NCA pre-pre-training with live visualizations, experiments, and controls you can tweak directly in-browser.
+
+## Access
+
+- GitHub repository: https://github.com/rkaushik29/alphaxiv-marimo-notebook-comp
+- Paper: https://arxiv.org/abs/2603.10055
+
+## Run Locally
+
+```bash
+git clone https://github.com/rkaushik29/alphaxiv-marimo-notebook-comp.git
+cd alphaxiv-marimo-notebook-comp
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install --upgrade pip
+pip install marimo numpy
+marimo run notebook.py
+```
+
+Then open:
+
+```bash
+marimo edit notebook.py
+```
+
+## Inside the Demo
+
+- Side-by-side Game of Life vs Neural Cellular Automata behavior
+- Live complexity analysis with gzip-based scoring
+- Tokenization and transfer intuition sections for NCA pre-pre-training
+</code></pre> </div> </main> <footer class="py-8 text-center text-sm text-text-secondary"> <p>© 2026</p> </footer> </div>  </body></html>
